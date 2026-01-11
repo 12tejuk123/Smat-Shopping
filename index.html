@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Curated Amazon & Meesho affiliate deals — trusted finds, best prices, no extra cost.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.smartshopping.example/">
+  <meta property="og:title" content="Smart Shopping — Curated Amazon & Meesho Deals">
+  <meta property="og:description" content="Curated Amazon & Meesho products you can trust — best prices and verified selections.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&q=80&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Smart Shopping — Curated Amazon & Meesho Deals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Smart Shopping",
+        "url": "https://www.smartshopping.example/",
+        "logo": "https://www.smartshopping.example/logo.png"
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://www.smartshopping.example/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.smartshopping.example/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Smart Shopping</a>
+      <nav class="top-nav">
+        <a href="#products">Products</a>
+        <a href="#deals">Deals</a>
+        <a href="#trust">Why Trust Us</a>
+      </nav>
+      <button id="nav-toggle" aria-label="open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Smart Shopping. Best Deals. Trusted Finds.</h1>
+        <p class="lead">Curated Amazon &amp; Meesho products you'll love.</p>
+        <div class="hero-ctas">
+          <button class="btn primary" id="shop-trending">Shop Trending</button>
+          <button class="btn outline" id="explore-deals">Explore Deals</button>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=60&auto=format&fit=crop" alt="Shopping collage" loading="lazy" decoding="async" width="800" height="533">
+      </div>
+    </section>
+
+    <section class="categories container" aria-label="Categories">
+      <h2 class="section-title">Categories</h2>
+      <div id="category-list" class="category-grid"></div>
+    </section>
+
+    <section id="products" class="product-controls container">
+      <div class="controls-row">
+        <div class="search-wrap">
+          <input id="search" type="search" placeholder="Search products, e.g. kurti, blender" aria-label="Search products">
+        </div>
+        <div class="filters">
+          <select id="category-filter" aria-label="Filter by category">
+            <option value="All">All Categories</option>
+          </select>
+          <select id="platform-filter" aria-label="Filter by platform">
+            <option value="All">All Platforms</option>
+            <option value="Amazon">Amazon</option>
+            <option value="Meesho">Meesho</option>
+          </select>
+          <select id="sort">
+            <option value="default">Sort: Recommended</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="trending">Trending</option>
+          </select>
+        </div>
+      </div>
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+
+    <section id="deals" class="deals container">
+      <h2 class="section-title">Hot Deals</h2>
+      <div id="deals-grid" class="deals-grid"></div>
+    </section>
+
+    <!-- Modal for designs -->
+    <div id="design-modal" class="modal hidden" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-panel" role="document">
+        <header class="modal-header">
+          <h3 id="modal-title">Designs</h3>
+          <button id="modal-close" aria-label="Close designs">✕</button>
+        </header>
+        <div class="modal-body">
+          <div id="designs-grid" class="designs-grid"></div>
+        </div>
+        <footer class="modal-footer">
+          <div id="selected-info" class="selected-info">Select a design to buy</div>
+          <a id="selected-buy" class="btn primary small" href="#" target="_blank" rel="noopener noreferrer">Buy This Design</a>
+        </footer>
+      </div>
+    </div>
+
+    <section id="trust" class="trust container">
+      <h2 class="section-title">Why Trust Us</h2>
+      <ul class="trust-list">
+        <li>✔ Curated &amp; Verified Products</li>
+        <li>✔ No Extra Cost to You</li>
+        <li>✔ Trusted Amazon &amp; Meesho Partners</li>
+      </ul>
+    </section>
+
+    <section class="disclaimer container">
+      <strong>Affiliate Disclaimer:</strong>
+      <p>This website contains affiliate links. We may earn a small commission at no extra cost to you.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="about">
+        <h3>About Us</h3>
+        <p>We curate trusted products from Amazon and Meesho to help you shop smarter.</p>
+      </div>
+      <div class="links">
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Affiliate Disclaimer</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-bar" id="sticky-bar">
+    <button class="btn primary" id="sticky-trending">Shop Trending</button>
+    <button class="btn outline" id="sticky-deals">Deals</button>
+  </div>
+  
+  <div id="consent-banner" class="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
+    <p>We use cookies &amp; analytics to improve your experience. Allow analytics to be used?</p>
+    <div class="consent-actions">
+      <button id="consent-accept" class="btn primary">Accept</button>
+      <button id="consent-decline" class="btn outline">Decline</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
